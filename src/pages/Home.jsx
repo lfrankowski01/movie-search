@@ -16,7 +16,7 @@ function Home() {
       const searchYear = year.trim();
 
       if(searchTerm === "" && searchYear === "") {
-        setError("Please enter movie title");
+        setError("Please enter a movie title or year");
         return;
       }
             try {
