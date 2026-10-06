@@ -47,7 +47,7 @@ function Home() {
 
     return (
         <div className='app'>
-        <h1>Branch Practice</h1>
+        <h1>My Movie Search</h1>
         <div className='search-container'>
           <input onKeyDown={(event) => { event.key === "Enter" ? getMovies() : null}} onChange={(event) => setInput(event.target.value)} type='text' placeholder='Search movie by name...'></input>
           <input onKeyDown={(event) => { event.key === "Enter" ? getMovies() : null}} onChange={(event) => setYear(event.target.value)} type='number' placeholder='Search movie by year...'></input>
