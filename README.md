@@ -1,16 +1,67 @@
-# React + Vite
+# Movie Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive movie search application built with React that allows users to search for movies and view detailed information using the OMDB API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Search for movies by title
+- Filter movies by release year
+- View movie posters and release date
+- View description about a film
+- Pagination through search results
+- Loading and error states
+- Fallback for missing or broken movie posters
+- Responsive design
+- Dynamic pages using Router
 
-## React Compiler
+## Technologies used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- React Router
+- Vite
+- CSS
+- OMDB API
+- Git & GitHub
 
-## Expanding the Oxlint configuration
+## What I learned
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+This project helped me practice and improve my understanding of:
+
+-Building reusable React components
+-Props and State with `useState`
+-Fetching API data with `fetch`
+-Using `async/await` and error handling
+-Using `useEffect`
+-Conditional rendering
+-Rendering lists with `.map()`
+-React Router
+-Dynamic routes with `useParams`
+-Loading and error states
+-Environment variables
+
+## Running the project locally
+
+Clone the repository and install the dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env` file in the root of the project and add your OMDB API key:
+
+```env
+VITE_OMDB_API_KEY=your_api_key
+```
+
+Then start the development server:
+
+```bash
+npm run dev
+```
+
+An API key can be obtained from the OMDB API website.
+
+## Author
+
+Built by Lukasz Frankowski as part of my web development portfolio.
