@@ -13,7 +13,7 @@ function MovieDetails() {
             try {
                setLoading(true);
                setError("");
-               const response = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=1713bdf2`);
+               const response = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=${import.meta.env.VITE_OMDB_API_KEY}`);
                const data = await response.json();
 
                if (data.Response === "False") {
